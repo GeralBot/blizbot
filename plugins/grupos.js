@@ -18,12 +18,11 @@ let rtotalreg = Object.values(global.db.data.users).filter(user => user.register
 let more = String.fromCharCode(8206)
 let readMore = more.repeat(850)   
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
-let str = `╭「 𝐆𝐞𝐫𝐚𝐥 𝐁𝐨𝐭 」
+let str = `╭「 𝐁𝐥𝐢𝐳 𝐁𝐨𝐭 」
 │➯𝗛ᴏʟᴀ,➟${taguser}
-│➯ᴏᴡɴᴇʀ:ᴏғᴄ➟Geral
-│➯*Número*➟51935763050
-│➯*canal-YouTube*
-│➯https://youtube.com/@hades_bot2391
+│➯ *𝙲𝚁𝙴𝙰𝙳𝙾𝚁:Geral-Bot
+│➯ *𝙸𝙽𝙵𝙾: Wa.me/51935763050
+│➯ *Yape: 900711258
 │➯ғᴇᴄʜᴀ:➟${date}
 │➯ᴛɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ:➟${uptime}
 │➯ᴜsᴜᴀʀɪᴏs:➟${rtotalreg}
