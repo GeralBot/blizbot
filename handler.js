@@ -30,7 +30,7 @@ export async function handler(chatUpdate) {
     if (!m)
         return
     if (global.db.data == null) await global.loadDatabase()
-/* Creditos a Otosaka (https://wa.me/51993966345) */	
+/* Creditos a Otosaka (https://wa.me/51935763050) */	
 	
 if (global.chatgpt.data === null) await global.loadChatgptDB();	
 	
@@ -45,7 +45,7 @@ if (global.chatgpt.data === null) await global.loadChatgptDB();
         try {
             // TODO: use loop to insert data instead of this
             let user = global.db.data.users[m.sender]
-/* Creditos a Otosaka (https://wa.me/51993966345) */
+/* Creditos a Otosaka (https://wa.me/51935763050) */
 	    
 let chatgptUser = global.chatgpt.data.users[m.sender];
             if (typeof chatgptUser !== "object")
@@ -1141,7 +1141,7 @@ if (m.text && user.banned && !isROwner) {
     const messageNumber = user.bannedMessageCount + 1;
     const messageText = `❰ ⚠️ ❱ *ESTAS BANEADO/A* ❰ ⚠️ ❱\nAviso ${messageNumber}/3 (${messageNumber} de 3)${user.bannedReason ? `\n*Motivo:* *${user.bannedReason}*` : ''}
 *👉 Puedes contactar a la propietaria del Bot si crees que se trata de un error (TENER PRUEBAS) para tratar el motivo de tú desbaneo*
-👉 wa.me/5212412377467
+👉 wa.me/5193576350
 `.trim();
     
     //m.reply(messageText);
@@ -1435,8 +1435,8 @@ export async function callUpdate(callUpdate) {
     let callmsg = await this.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} no están permitidas, serás bloqueado.\n-\nSi accidentalmente llamaste póngase en contacto con mi creador para que te desbloquee!`, false, { mentions: [nk.from] })
     //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
     //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-    let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍;;;\nFN:⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍\nORG:⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍\nTITLE:\nitem1.TEL;waid=5212412377467:+521 241 237 7467\nitem1.X-ABLabel:⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍\nEND:VCARD`
-    await this.sendMessage(nk.from, { contacts: { displayName: '⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍', contacts: [{ vcard }] }}, {quoted: callmsg})
+    let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝐆𝐞𝐫𝐚𝐥 𝐁𝐨𝐭 ✍;;;\nFN:𝐆𝐞𝐫𝐚𝐥 𝐁𝐨𝐭 ✍\nORG:𝐆𝐞𝐫𝐚𝐥 𝐁𝐨𝐭 ✍\nTITLE:\nitem1.TEL;waid=51935763050:+51 935 763 050\nitem1.X-ABLabel:𝐆𝐞𝐫𝐚𝐥 𝐁𝐨𝐭 ✍\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:𝐆𝐞𝐫𝐚𝐥 𝐁𝐨𝐭 ✍\nEND:VCARD`
+    await this.sendMessage(nk.from, { contacts: { displayName: '𝐆𝐞𝐫𝐚𝐥 𝐁𝐨𝐭 ✍', contacts: [{ vcard }] }}, {quoted: callmsg})
     await this.updateBlockStatus(nk.from, 'block')
     }
     }
@@ -1485,7 +1485,7 @@ global.dfail = (type, m, conn) => {
         restrict: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙴𝚂𝚃𝙰 𝚁𝙴𝚂𝚃𝚁𝙸𝙽𝙶𝙸𝙳𝙾/𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾 𝙿𝙾𝚁 𝙳𝙴𝚂𝙸𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾/𝙰 (𝙾𝚆𝙽𝙴𝚁) 𝙳𝙴𝙻 𝙱𝙾𝚃*\n\n\n[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ]*THIS COMMAND IS REGISTERED/DISABLED BY DECISION OF THE OWNER OF THE BOT*'
          }[type]
     let aa = { quoted: m, userJid: conn.user.jid }
-    let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: '[ ⚠ ] 𝐀𝐕𝐈𝐒𝐎 - 𝐀𝐋𝐄𝐑𝐓𝐀', body: '⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍', thumbnail: imagen1, sourceUrl: 'https://github.com/OFC-YOVANI/HADES-OMEGA' }}}}, aa)
+    let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: '[ ⚠ ] 𝐀𝐕𝐈𝐒𝐎 - 𝐀𝐋𝐄𝐑𝐓𝐀', body: '𝐆𝐞𝐫𝐚𝐥 𝐁𝐨𝐭 https://instagram.com/geral_ventas18/' }}}}, aa)
     if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
     //if (msg) return m.reply(msg)
 }
